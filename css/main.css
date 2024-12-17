@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.heading{
+    background-color: blueviolet;
+    color: #fff;
+    padding: 20px;
+}
+.content{
+    background-color: rgb(234, 190, 255);
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.content p,button{
+    margin-top: 1rem;
+}
+.content button{
+    background-color: blueviolet;
+    border: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.popup-btn button{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+    border: none;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.datas input{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+}
+.datas button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.datas{
+    background-color: rgb(195, 109, 235);
+    width: 20%;
+    padding: 20px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    margin: auto;
+}
+.store-content{
+    background-color: rgb(234, 190, 255);
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: none;
+}

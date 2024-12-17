@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="booksky-container">
+        <div class="heading">
+            <h1>Booksky</h1>
+        </div>
+
+        <div class="content"  id="all-content">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in, consectetur molestiae nobis deserunt praesentium unde quidem ipsum nihil voluptate architecto, numquam natus! Beatae porro sit hic repudiandae quasi exercitationem?</p>
+            <button>Delete</button>
+        </div>
+
+        <div class="popup-btn">
+            <button id="clickPopup">+</button>
+        </div>
+
+        <div class="datas" id="open">
+            <h3>Add Book</h3>
+            <input type="text" id="titleId" placeholder="Book Title"><br>
+            <input type="text" id="authorId" placeholder="Book Author"><br>
+            <button onclick="add()">Add</button>
+        </div>
+
+        <div class="store-content" id="store-content">
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        const clickPopup = document.getElementById("clickPopup");
+        clickPopup.addEventListener("click", function(){
+            const datas = document.getElementById("open");
+            const allContent = document.getElementById("all-content");
+            datas.style.display = "block";
+            allContent.style.opacity = 0.2;
+        })
+
+        function add(){
+            const titleId = document.getElementById("titleId");
+            const authorId = document.getElementById("authorId");
+            const storeContent = document.getElementById("store-content");
+            const open = document.getElementById("open");
+            const allContent = document.getElementById("all-content");
+            storeContent.style.display = "block";
+
+            const h3 = document.createElement("h3");
+            const p = document.createElement("p");
+            const deleteBtn = document.createElement("button");
+
+            h3.append(titleId.value);
+            p.append(authorId.value);
+            deleteBtn.append();
+
+            storeContent.append(h3);
+            storeContent.append(p);
+            storeContent.append(deleteBtn);
+
+            allContent.style.opacity = 1;
+            open.remove();
+        }
+    </script>
+</body>
+</html>
